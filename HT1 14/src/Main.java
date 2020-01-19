@@ -76,7 +76,7 @@ public class Main {
 		JPanel pDisplay = new JPanel();
 		pDisplay.setBackground(new Color(106, 129, 115));
 		pDisplay.setForeground(Color.DARK_GRAY);
-		pDisplay.setBounds(124, 13, 399, 106);
+		pDisplay.setBounds(124, 13, 331, 106);
 		pArriba.add(pDisplay);
 		pDisplay.setLayout(null);
 		
@@ -88,7 +88,7 @@ public class Main {
 		
 		JLabel lblFrecuencia = new JLabel(" 102.6");
 		lblFrecuencia.setBackground(Color.BLACK);
-		lblFrecuencia.setBounds(110, 3, 277, 103);
+		lblFrecuencia.setBounds(110, 3, 216, 103);
 		pDisplay.add(lblFrecuencia);
 		lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 51));
 		
@@ -105,6 +105,13 @@ public class Main {
 		btnGrabarEmisora.setBackground(Color.GRAY);
 		btnGrabarEmisora.setBounds(652, 13, 182, 106);
 		pArriba.add(btnGrabarEmisora);
+		
+		JButton button = new JButton("+");
+		button.setFont(new Font("Tahoma", Font.PLAIN, 25));
+		button.setForeground(Color.WHITE);
+		button.setBackground(Color.GRAY);
+		button.setBounds(467, 13, 56, 106);
+		pArriba.add(button);
 		
 		JPanel pBotones = new JPanel();
 		pBotones.setBackground(negro);
@@ -173,5 +180,7 @@ public class Main {
 		
 		frame.setBounds(100, 100, 852, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
 	}
 }
