@@ -116,7 +116,7 @@ public class Main {
 		lblAmFm.setFont(new Font("Power Clear", Font.BOLD, 55));
 		
 		if(radio.estado()) {
-			lblFrecuencia = new JLabel(" 102.6");
+			lblFrecuencia = new JLabel(radio.estacionActual());
 		} else {
 			lblFrecuencia = new JLabel("");
 		}
