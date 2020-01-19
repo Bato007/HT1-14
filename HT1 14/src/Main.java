@@ -3,16 +3,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.Color;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.GridLayout;
 import java.awt.Window.Type;
-import javax.swing.BoxLayout;
-import java.awt.Component;
-import javax.swing.Box;
 import javax.swing.JButton;
 import java.awt.Font;
-import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
