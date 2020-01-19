@@ -2,11 +2,12 @@ package src;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
-
 /**
  * @author Pablo Méndez 19195
  * @author Brandon Hernandez 19376
  * @version 19/01/2020
+ * Esta clase se encarga de modelar los comportamientos y caractertisicas 
+ * de un radio.
  */
 public class Radio implements RadioInterface{
 	
@@ -18,7 +19,7 @@ public class Radio implements RadioInterface{
 	private Integer[] favoritoAm = new Integer[12];
 	private Double[] favoritoFm = new Double[12];
 	
-	//Constructor para un radio, se inicializan todos los atributos del radio
+	// Constructor para un radio, se inicializan todos los atributos del radio
 	public Radio() {
 		this.tipoEstacion = "AM";
 		this.frecuenciaActualAM = 530;
@@ -43,9 +44,9 @@ public class Radio implements RadioInterface{
 	}// Fin del método
 	
 	/*
-	 * Método que devuelve el estado en el que se encuentra el radio
-	 * @return. Devuelve true(encendido) o false(apagado)
-	 */
+	* Método que devuelve el estado en el que se encuentra el radio
+	* @return. Devuelve true(encendido) o false(apagado)
+	*/
 	public Boolean estado() {
 		return onOff;
 	}// Fin del método
@@ -117,7 +118,7 @@ public class Radio implements RadioInterface{
 	/*
 	* Método que asigna una frecuencia favorita a la frecuencia actual de la emisora
 	* @param boton El parámetro boton(- 1) define el lugar de la frecuencia favorita que 
-	* se quiere escuchar.
+	* se quiere asignar a la frecuencia actual.
 	*/
 	public void seleccionarEmisora(int boton) {
 		if(tipoEstacion.equalsIgnoreCase("AM")) {

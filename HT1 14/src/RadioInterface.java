@@ -1,12 +1,10 @@
 package src;
 
-/* Autores:
- * Pablo
- * Brandon Hernández - 19376
- * Fecha de Creación: 17 de Enero de 2020
- * Nombre: RadioInterface.java 
- * 
- * Modelo de un radio.
+/**
+ * @author Pablo Méndez 19195
+ * @author Brandon Hernandez 19376
+ * @version 17/01/2020
+ * Se encarga de modelar un radio
  */
 public interface RadioInterface {
 
