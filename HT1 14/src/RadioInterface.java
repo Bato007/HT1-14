@@ -1,5 +1,3 @@
-package src;
-
 /**
  * @author Pablo Méndez 19195
  * @author Brandon Hernandez 19376
