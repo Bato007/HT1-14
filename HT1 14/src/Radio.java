@@ -1,5 +1,5 @@
 /* Autores:
- * Pablo
+ * Pablo Méndez - 19195 
  * Brandon Hernández - 19376
  * Fecha de Creación: 17 de Enero de 2020
  * Nombre: Radio.java 
