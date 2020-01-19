@@ -114,6 +114,7 @@ public class Main {
 		lblAmFm.setBackground(Color.BLACK);
 		lblAmFm.setFont(new Font("Power Clear", Font.BOLD, 55));
 		
+		
 		if(radio.estado()) {
 			lblFrecuencia = new JLabel(radio.estacionActual());
 		} else {
@@ -123,6 +124,13 @@ public class Main {
 		lblFrecuencia.setBounds(110, 3, 216, 103);
 		pDisplay.add(lblFrecuencia);
 		lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 51));
+		
+		if(radio.estacionActual().length() > 6)
+		{
+			lblAmFm.setFont(new Font("Power Clear", Font.PLAIN, 0));
+			lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 25));
+			lblFrecuencia.setBounds(0, 0, 330, 103);
+		}
 		
 		btnAmFm = new JButton("AM/FM");
 		btnAmFm.setForeground(Color.WHITE);
