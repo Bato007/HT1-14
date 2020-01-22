@@ -112,7 +112,7 @@ public class Main {
 		lblAmFm.setBounds(0, 3, 98, 103);
 		pDisplay.add(lblAmFm);
 		lblAmFm.setBackground(Color.BLACK);
-		lblAmFm.setFont(new Font("Power Clear", Font.BOLD, 55));
+		lblAmFm.setFont(new Font("Power Clear", Font.BOLD, 45));
 		
 		
 		if(radio.estado()) {
@@ -239,6 +239,7 @@ public class Main {
 	
 	private class MiListener implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
+			//Si se apacha el botón encender se borra o se escribe el estado actual en los labels
 			if(e.getSource() == btnEncender)
 			{
 				guardando = false;
@@ -250,6 +251,7 @@ public class Main {
 				} 
 				else 
 				{
+					//Si se está encendiendo le cambió el mensaje a AM o FM
 					lblFrecuencia.setText(radio.estacionActual());
 					if(isAm) 
 					{
@@ -261,8 +263,10 @@ public class Main {
 					}
 				}
 			}
+			//Si no se apacha el boton de encender, veo si está encendido
 			else if(radio.estado()) 
 			{
+				//Si se cambia la frecuencia, cambio el mensaje a AM o FM y actualizo la frecuencia
 				if(e.getSource() == btnAmFm) 
 				{
 					guardando = false;
@@ -280,6 +284,7 @@ public class Main {
 						lblFrecuencia.setText(radio.estacionActual());
 					}
 				}
+				// Si trata de aumentar la frecuencia, le cambio la frecuencia y actualizo los labels
 				else if(e.getSource() == btnFrecuenciaUp) 
 				{
 					guardando = false;
@@ -287,10 +292,13 @@ public class Main {
 					lblFrecuencia.setText(radio.estacionActual());
 				}
 				else if(e.getSource() == btnGrabarEmisora) 
+					//Si presiona el de guardar emisora, hago que el siguiente botón (1-12) guarde una frecuencia
 				{
 					guardando = true;
 				} 
+				// Si presiona cualquier botón (1-12) pongo la emisora favorita o lo guardo la emisora actual en ese botón si se apacho el de guardar emisora
 				else if(e.getSource() == btn1) 
+					
 				{
 					if(guardando) {
 						guardando = false;
