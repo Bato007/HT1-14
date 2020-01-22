@@ -19,7 +19,7 @@ public class Radio implements RadioInterface{
 	private Double[] favoritoFm = new Double[12];
 	
 	/**
-	 * Constructor
+	 * Constructor del radio
 	 */
 	public Radio() {
 		this.tipoEstacion = "AM";

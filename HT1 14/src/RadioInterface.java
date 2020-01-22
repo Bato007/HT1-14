@@ -15,15 +15,15 @@ public interface RadioInterface {
 	public String estacionActual();
 	
 	/**
-	 * pre: 
+	 * pre:-
 	 * pos: verifica el valor del radio
 	 * @return devuelve el estado del radio encendido(true) o apagado(false)
 	 */
 	public boolean estado();
 	
 	/**
-	 * pre: 
-	 * pos: cambia el estado del radio, de true a false y viceversa
+	 * pre: -
+	 * pos: cambia el estado del radio, de true a false y viceversa.
 	 */	
 	public void onOff();
 	
