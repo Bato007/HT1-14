@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * @author Pablo Méndez 19195
  * @author Brandon Hernandez 19376
- * @version 19/01/2020
+ * @version 21/01/2020
  * Esta clase se encarga de modelar los comportamientos y caractertisicas 
  * de un radio.
  */
@@ -14,7 +14,7 @@ public class Radio implements RadioInterface{
 	private String tipoEstacion; 
 	private Integer frecuenciaActualAM;
 	private Double frecuenciaActualFM;
-	private Boolean onOff;
+	private boolean onOff;
 	private Integer[] favoritoAm = new Integer[12];
 	private Double[] favoritoFm = new Double[12];
 	
@@ -46,7 +46,7 @@ public class Radio implements RadioInterface{
 	* Devuelve el estado en el que se encuentra el radio
 	* @return true(encendido) o false(apagado)
 	*/
-	public Boolean estado() {
+	public boolean estado() {
 		return onOff;
 	}
 		
