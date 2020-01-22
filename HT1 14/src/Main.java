@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 /**
- * 
+ * Se encarga de arrancar el programa y de ser el GUI.
  * @author Pablo Méndez 19195
  * @author Brandon Hernandez 19376
  * @version 18/01/2020
