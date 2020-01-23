@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
 
 /**
  * Se encarga de arrancar el programa y de ser el GUI.
- * @author Pablo Méndez 19195
+ * @author Pablo Mï¿½ndez 19195
  * @author Brandon Hernandez 19376
  * @version 18/01/2020
  */
@@ -125,7 +125,7 @@ public class Main {
 		pDisplay.add(lblFrecuencia);
 		lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 51));
 		
-		if(radio.estacionActual().length() > 6)
+		if(radio.estacionActual().length() > 3)
 		{
 			lblAmFm.setFont(new Font("Power Clear", Font.PLAIN, 0));
 			lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 25));
@@ -239,7 +239,7 @@ public class Main {
 	
 	private class MiListener implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
-			//Si se apacha el botón encender se borra o se escribe el estado actual en los labels
+			//Si se apacha el botï¿½n encender se borra o se escribe el estado actual en los labels
 			if(e.getSource() == btnEncender)
 			{
 				guardando = false;
@@ -251,7 +251,7 @@ public class Main {
 				} 
 				else 
 				{
-					//Si se está encendiendo le cambió el mensaje a AM o FM
+					//Si se estï¿½ encendiendo le cambiï¿½ el mensaje a AM o FM
 					lblFrecuencia.setText(radio.estacionActual());
 					if(isAm) 
 					{
@@ -263,7 +263,7 @@ public class Main {
 					}
 				}
 			}
-			//Si no se apacha el boton de encender, veo si está encendido
+			//Si no se apacha el boton de encender, veo si estï¿½ encendido
 			else if(radio.estado()) 
 			{
 				//Si se cambia la frecuencia, cambio el mensaje a AM o FM y actualizo la frecuencia
@@ -292,11 +292,11 @@ public class Main {
 					lblFrecuencia.setText(radio.estacionActual());
 				}
 				else if(e.getSource() == btnGrabarEmisora) 
-					//Si presiona el de guardar emisora, hago que el siguiente botón (1-12) guarde una frecuencia
+					//Si presiona el de guardar emisora, hago que el siguiente botï¿½n (1-12) guarde una frecuencia
 				{
 					guardando = true;
 				} 
-				// Si presiona cualquier botón (1-12) pongo la emisora favorita o lo guardo la emisora actual en ese botón si se apacho el de guardar emisora
+				// Si presiona cualquier botï¿½n (1-12) pongo la emisora favorita o lo guardo la emisora actual en ese botï¿½n si se apacho el de guardar emisora
 				else if(e.getSource() == btn1) 
 					
 				{
