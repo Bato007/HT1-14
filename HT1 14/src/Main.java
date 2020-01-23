@@ -125,7 +125,7 @@ public class Main {
 		pDisplay.add(lblFrecuencia);
 		lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 51));
 		
-		if(radio.estacionActual().length() > 3)
+		if(radio.estacionActual().length() > 3 || radio.estacionActual().length() == 0)
 		{
 			lblAmFm.setFont(new Font("Power Clear", Font.PLAIN, 0));
 			lblFrecuencia.setFont(new Font("Power Clear", Font.PLAIN, 25));
