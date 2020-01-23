@@ -39,7 +39,7 @@ public class Main {
 	private JButton btn11;
 	private JButton btn12;
 	
-	private RadioInterface radio;
+	private RadioInterface radio = new Radio();
 	private boolean isAm;
 	private boolean guardando;
 	private JFrame frame;
@@ -64,7 +64,6 @@ public class Main {
 	 * Create the application.
 	 */
 	public Main() {
-		radio = new Radio();
 		isAm = true;
 		guardando = false;
 		initialize();
